@@ -1,0 +1,15 @@
+{
+  "name": "mcp-servers",
+  "version": "1.0.0",
+  "description": "MCP Servers for the Personal AI Employee",
+  "main": "email_mcp.js",
+  "scripts": {
+    "start": "node email_mcp.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemailer": "^8.0.1"
+  }
+}

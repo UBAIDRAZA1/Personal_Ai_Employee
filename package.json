@@ -1,0 +1,19 @@
+{
+  "name": "personal-ai-employee",
+  "version": "1.0.0",
+  "description": "Personal AI Employee System",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run whatsapp-mcp\" \"npm run file-system-watcher\" \"npm run approval-watcher\" \"npm run whatsapp-auto-responder\"",
+    "whatsapp-mcp": "node mcp_servers/whatsapp_mcp.js",
+    "file-system-watcher": "node watchers/fileSystemWatcher.js",
+    "approval-watcher": "node watchers/approvalWatcher.js",
+    "whatsapp-auto-responder": "node watchers/whatsapp_auto_responder.js",
+    "dev": "concurrently \"npm run whatsapp-mcp\" \"npm run file-system-watcher\" \"npm run approval-watcher\""
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "playwright": "^1.58.2",
+    "concurrently": "^8.2.2"
+  }
+}

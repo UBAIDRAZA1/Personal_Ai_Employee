@@ -1,0 +1,63 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment variables (contains secrets)
+.env
+
+# Session files (WhatsApp auth)
+whatsapp_session/
+**/whatsapp_session/
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Test/Debug files (temporary)
+create_test_email.js
+debug_env.js
+debug_regex.js
+test_gemini.js
+test_email*.md
+
+# Vault temporary files
+AI_Employee_Vault/Inbox/*.md
+AI_Employee_Vault/Needs_Action/*.md
+AI_Employee_Vault/Done/*.md
+AI_Employee_Vault/Logs/*.md
+AI_Employee_Vault/Pending_Approval/*.md
+AI_Employee_Vault/Approved/*.md
+
+# Keep vault structure but not content
+!AI_Employee_Vault/Inbox/.gitkeep
+!AI_Employee_Vault/Needs_Action/.gitkeep
+!AI_Employee_Vault/Done/.gitkeep
+!AI_Employee_Vault/Logs/.gitkeep
+!AI_Employee_Vault/Plans/.gitkeep
+!AI_Employee_Vault/Pending_Approval/.gitkeep
+!AI_Employee_Vault/Approved/.gitkeep
+
+# Build artifacts
+dist/
+build/
+
+# PDF temp files
+*.pdf.tmp
+
+# npm debug logs
+npm-debug.log*
+
+# Coverage reports (if testing added later)
+coverage/
